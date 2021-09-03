@@ -1,0 +1,23 @@
+README
+
+You can choose to download and run this software yourself or you can use the instance below:
+There is a instance of this software running 24/7 (hopefully) on http://oklomsy.com:3000
+
+
+Also, HowItWorks explains how the software works.
+Index.js contains the code.
+LICENSE contains the MIT License.
+
+
+You need to download these libraries
+
+(Debian)
+sudo apt install nodejs npm fortune-mod
+
+(NPM Libraries)
+npm install express
+
+
+Everything should work, if it doesn't then please contact me
+
+Sincerely, Oklomsy.

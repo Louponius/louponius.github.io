@@ -1,0 +1,44 @@
+Yes, I did use code snippets programmed by other people.
+but there is no way I would have figured this out myself.
+
+First off, to run this you need express and basic node libraries.
+and you also need to download fortune-mod (sudo apt install fortune-mod)
+Any modern version of node should work... hopefully...
+
+1. We start by requiring express
+and then we store everything we use.
+
+you can change the port variable to change the port that express runs on.
+the html var is where the site code is stored.
+
+you can also change the fortunecmd variable to change the command ran.
+You can change it to any command you want, but it is "fortune" by default.
+
+then this is where it gets complicated.
+First off, After you load a webpage, you cannot edit it.
+You cannot reload or change anything in a webpage after you run res.send in express.
+
+I wanted a button that displays a new fortune every time someone hits it.
+but that isn't possible without using client-side js
+
+So there is a script tag that has a function called "get"
+the get command copies text from /fortune and puts it inside of a <p> tag with the id "furt"
+
+and then there is a function called "run" I don't know how it works.
+I tried using the "exec" function provided by child_process but it NEVER worked.
+it just wouldn't display the text, so I searched online and found this snippet of code that
+requires the "spawn" function from the child_process library.
+I don't know how it works, feel free to study it yourself.
+
+all i know is that it runs any command you provide it with and it returns the stdout in a weird way.
+
+here is a link to the stackoverflow answer that explains the run function.
+https://stackoverflow.com/a/15515651
+
+then we send the html code to anyone who visits the web root.
+and then we tell the run command to run "fortune" and send the output to the browser.
+so anyone who visits /fortune will get the output of the fortune command.
+
+Good luck modifying!
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reasons to minimize (or even stop) using Discord</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+</head>
+
+<body>
+    <!--
+        Since we are going JS-free we have to use a workaround
+        Because a HTML button doesn't have href and I don't want to style 
+        an <a> tag
+    -->
+    <div style="margin:auto;text-align:center;">
+        <form action="https://oklomsy.com" method="POST">
+            <input type="submit" value="Go back" />
+        </form>
+    </div>
+    <h1>Reasons to minimize (or even stop) using Discord</h1>
+    <p>Date: Feb-17-2021</p>
+    <p>
+        If you want a simple list of reasons why to stop using discord then go: <a href="https://stallman.org/discord.html">here</a>
+        <br><br> Discord, like most non-free apps, spies on users. It is possible to turn off "Personalization" settings, but there is no guarantee that this will stop Discord from spying on you, I still use Discord, I need it to contact my friends, but
+        I really urge that you convince your friends to switch to a different free platform, maybe try Element.io, Signal or hosting a simple chat messaging server yourself. You cannot avoid this surveillance if you use Discord, You CAN however, choose
+        a free alternative compared to the Discord Desktop app but heres the catch, Discord's Terms of Service says that "If you use something other than Discord's official clients, then your account will be terminated"
+        <br><br> And forget about using a VPN, Discord bans all Tor and VPN users. If you login using a VPN or some sort of Proxy, Discord will ask for your phone number, there is no way around this sadly.
+        <br><br> Then there is security, Discord in 2018 or 2019 was attacked by a phising website known as DiscordGG.GA, In the website, they wrote about how they did it and how Discord should fix the mess. Their website read out "PS - To Discord All
+        you had to do is prevent CSRF on the login endpoint, but you decided to simply block our server's IP address from connecting from your site - which clearly didn't work. - Please do better next time... "
+        <br><br> Basically what they did was: "Proxy all requests to Discord's own website with obfuscated JS injected inside. The JS took over the login form and submitted its own API Call to the login endpoint, and the response was sent back to our
+        server. (The response included a session token)", Then they wrote "We had a automated bot change the email and password using Discord's own well-documented API" I still don't understand why Discord would allow applications to change the email
+        and password. Discord decided to instead, block their server IP which stopped them for "a good 10 minutes before we realised and proxied our requests", Discord should have prevented CSRF on their own Login endpoint according to the hackers.
+        <br><br> Also, Discord uses Google Cloud Servers and I am pretty sure they store them without encryption, So all of your Discord can be viewed by Google easily.
+        <br><br>
+        And then the final reason, Discord bans users for no reason. My account was terminated by Discord, I asked them nicely if they could please re-activate it, they said terminated accounts are terminated FOREVER. I asked them why they did
+        it and they said "Because you were spamming" and I asked them to please elaborate and then they left one final message that said "You had a self-bot" I never had any self-bots, they didn't provide a picture or any evidence of their supposed claims
+        and just deleted my account, my friends and everything.
+    </p>
+</body>
+
+</html>

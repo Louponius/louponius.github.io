@@ -1,0 +1,54 @@
+  
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>oklomsy.com</title>
+      <meta name="author" content="Oklomsy">
+      <meta name="description" content="Oklomsy's official website">
+      <meta name="keywords" content="oklomsy">
+      <link rel="stylesheet" href="normalize.css" type="text/css">
+      <link rel="stylesheet" href="main.css" type="text/css">
+      <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+   </head>
+   <body>
+      </div>
+      <div id="main" style="margin:0;width:100%;">
+         <h1 class="headertext casual center">Oklomsy's Official Website</h1>
+         <h2 class="center">PGP Keys</h2>
+        <!--
+                Since the website is JS-free I have to use a workaround
+                Because HTML <button>s don't have href and I don't want 
+                to style <a> tags
+        -->
+        <div style="margin:auto;text-align:center;">
+                <form action="https://oklomsy.com" method="POST">
+                        <input type="submit" value="Go back" />
+                </form>
+        </div>
+        <div class="post casual">
+             <p>If you ever need to contact me privately then you can use my PGP Key, I will respond even if you do not use PGP but I still highly recommend it. Also If you want an encrypted reply then send me your public key, I will keep it in my keychain but if we don't talk much then I might remove it but don't worry you just have to send it again.</p>
+<pre class="cd">
+pub   ed25519 2021-05-12 [SCA] [expires: 2023-05-12]
+      9DEDA83AAA5F1614F34C4933188054753DD8F950
+uid           [ultimate] Abdul Karim Kikar &lt;abdul@oklomsy.com&gt;
+
+</pre><p>You can download it from here: <a href="/mainpublic.asc">New key</a> or <code>gpg --fetch-keys https://oklomsy.com/mainpublic.asc</code></p>
+<p>I occasionally change my keys and revoke the old one, If you want to automatically fetch my key then you can use this command:<code>gpg --fetch-keys https://oklomsy.com/mainpublic.asc</code>
+<p>Of course, I can't guarantee that this is my key, to verify my identity reasonably well, you have to either get my fingerprint from multiple locations (Social media, Email, websites) and compare them or you can meet me in person to verify my fingerprint or you can follow a chain of signatures to verify that its me.</p>
+<h4 class="center casual">Previous keys</h4><p>Here is a list of revoked keys that I used previously:</p>
+<ul>
+	<li>A6EF0BA8CD909C7BFD4DA01A12000CC62462578F (Revoked since May 14 2021)</li>
+	<li>6F1AA72C7D4906FAA10111B0BABCBB44D284DA51 (Revoked since April 5 2021)</li>
+	<li>277816142C9698C6B398333753B6C517C4A5A756 (Revoked since April 6 2021)</li>
+</ul>
+
+       </div>
+         <hr>
+         <p>License: https://oklomsy.com/LICENSE</p>
+      </div>
+   </body>
+</html>

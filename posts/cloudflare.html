@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Why I stopped using Cloudflare</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+</head>
+
+<body>
+    <!--
+        Since we are going JS-free we have to use a workaround
+        Because a HTML button doesn't have href and I don't want to style 
+        an <a> tag
+    -->
+    <div style="margin:auto;text-align:center;">
+        <form action="https://oklomsy.com" method="POST">
+            <input type="submit" value="Go back" />
+        </form>
+    </div>
+    <h1>Why I stopped using Cloudflare</h1>
+    <p>Date: Feb-10-2021</p>
+    <hr>
+    <p>
+        First off... I have decided to stop using Cloudflare and immediately remove from all of my websites... Cloudflare is a service used by websites to mitigate DDOS attacks, provide free SSL certificates, provide free storage on a Static CDN among other things.
+        Their entire business strategy is to be the middle-man, they are in the middle between your browser and the server checking if you are a bot, or for anything else...
+        <br><br>That poses a huge privacy risk to my readers, and I don't even need DDOS mitigation or free SSL certificates or a static CDN. The only reason I chose Cloudflare was because it had a huge amount of DNS record types, My domain registrar
+        only has 6-9 types while cloudflare has 11-12 or maybe even more, and also I used it because it had a simple user interface, that was the only reason I used it.
+        <br><br>Cloudflare has an option to turn off Cloudflare's proxy (So that Cloudflare isn't between your browser and the server) for DNS records, I turned them off because I was running an email server and I didn't want it to break. but I also didn't
+        want to look like I was supporting Cloudflare, I didn't want to endorse them and I definitely did not want them to gain more websites.
+        <br><br>Cloudflare discriminates against Tor and VPN users. I don't care if Tor or VPN users enter my website, but Cloudflare does, and Cloudflare sends a captcha (A proprietary captcha that likely has trackers inside) and The captcha disappears
+        for the rest of the browser session which means that Cloudflare sets a cookie that uniquely identifies the Tor/VPN user.
+        <br><br>This is unacceptable to me, I believe in privacy and what Cloudflare is doing is just disgusting... Then there are also security bugs, in 2017, a security vulnerability called Cloudbleed was discovered... it allowed attackers to see private
+        things such as HTTP POST Data or Session keys...
+        <br><br>then there is also censorship, Cloudflare terminated 8chan's website, This meant that 8chan was vulnerable to DDOS attacks... I think 8chan deserved it because it was a right-wing propaganda hotspot and they were associated with several
+        right-wing mass shootings (including the New Zealnd mosque attacks, which hurt me on a personal level because I am a muslim) but this is still alarming, Cloudflare could terminate your service if they don't like what you are doing.
+        <br><br>These 3 reasons among others made me think about whether or not I really needed Cloudflare, and I changed my domain's nameservers to my domain registrar's nameservers and copied the DNS records. Now I don't need Cloudflare, which is good
+        for me. Why should I bother with a third-party company when my domain registrar can offer the same services while respecting my readers privacy?
+        <br><br>If you use Cloudflare then I want you to really think about whether or not you need it, think about the security bugs, terms and conditions and Proxy discrimination. I really hope you can leave Cloudflare but if you are a huge website
+        susceptible to DDOS attacks then Its okay, I get it. but try exploring other options too.
+        <br><br><i>Sincerely, Oklomsy.</i>
+    </p>
+
+</body>
+
+</html>

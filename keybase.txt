@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/oklomsy2
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://oklomsy.com
+  * I am oklomsy2 (https://keybase.io/oklomsy2) on keybase.
+  * I have a public key ASAzeqBBRum2Cip4sYsIHXv08t7_Hm5WwsOmRySDLrTLEwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01164c62a14f8c84705076a3e35db721ad455d0dfbd5c19beb5054508028b6b370d90a",
+      "host": "keybase.io",
+      "kid": "0120337aa04146e9b60a2a78b18b081d7bf4f2deff1e6e56c2c3a64724832eb4cb130a",
+      "uid": "8ece3d649061ae9735e9a8c043bf1c19",
+      "username": "oklomsy2"
+    },
+    "merkle_root": {
+      "ctime": 1621721857,
+      "hash": "325a7532ecbdd585e512c0bb17438e5ad3d025c7ad389dba877fab583fa8fcd437c9e61be0779216ae91ee1486070a0bc108c930f0ab6bbf55809760a45128c7",
+      "hash_meta": "cc62cf2e84649ae2838f591f2d2280ee7f4e0fd42bf38b2f71b7eb918f4f65d4",
+      "seqno": 20018203
+    },
+    "service": {
+      "entropy": "fqs08AQkXgrib436RXBImm8p",
+      "hostname": "oklomsy.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.6.1"
+  },
+  "ctime": 1621721871,
+  "expire_in": 504576000,
+  "prev": "1b4684ee56b035a55e2ed5db43f15721dfe34703934bf05a4402d3b603c593b7",
+  "seqno": 19,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgM3qgQUbptgoqeLGLCB179PLe/x5uVsLDpkckgy60yxMKp3BheWxvYWTESpcCE8QgG0aE7lawNaVeLtXbQ/FXId/jRwOTS/BaRALTtgPFk7fEIIy86W6LMDD6oE0V/Vj3t7J2CmO+z2/2Qj8VJ2ECbYUXAgHCo3NpZ8RALBIn9ojc51NWKDB2MaTWfdGimqzYAkNTIWIGEgO9trKwPWZTUjhVFLOHSE1WTn1MPSf8tqVZESTrNOXA086WAKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBFsi5QimssbshC03cBnPybLO4xeMABEH4aSZVcmxnb7o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/oklomsy2
+
+==================================================================

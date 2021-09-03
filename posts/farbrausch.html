@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A Farbrausch software archive.</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+</head>
+
+<body>
+    <!--
+        Since the website is JS-free I have to use a workaround
+        Because HTML <button>s don't have href and I don't want 
+        to style <a> tags
+    -->
+    <div style="margin:auto;text-align:center;">
+        <form action="https://oklomsy.com" method="POST">
+            <input type="submit" value="Go back" />
+        </form>
+    </div>
+    <h1>A Farbrausch software archive.</h1>
+    <p>Date: Jan-10-2021.</p>
+    <hr>
+    <p>Farbrausch is a german demoscene group, they are popular for creating lightweight but amazing demoscenes.</p>
+    <p>They created a lot of stuff including: Kkrieger (A 3D game achieved in less than 100 kilobytes), Werkkzeug (engines for creating lightweight demos and textures) and a lot more.</p>
+    <p>Ultimately, a lot of its members just stopped putting out new content and they decided in 2011 to release all of the source code for all of their projects.</p>
+    <p>Some of their members went on to still be active in the demoscene community or just went on with their lives.</p>
+    <p>I was so interested about Farbrausch in 2019, I decided to archive all software I could find that was associated with them</p>
+    <p>However, due to an error, I accidentally formatted my USB drive and lost a lot of important things.</p>
+    <p>so in 2021, I decided to archive all of their software and make it available in a big pile of archives.</p>
+    <h3><b><i>Downloads are temporarily down.</i></i></h3>
+    <p>There are 2 important files:
+        <ul>
+            <li><a href="/ftp/farbrausch/files.txt">files.txt</a> - Explaining what each app does and where I got it from (The Origin)</li>
+            <li><a href="/ftp/farbrausch/ultra.7z">ultra.7z</a> - Software collection, Size: 32 MB.</li>
+            <li><a href="/ftp/farbrausch/demos.7z">demos.7z</a> - Demos collection, Size 295MB.</li>
+        </ul>
+    </p>
+    <p>
+        The archives are compressed using 7zip's Ultra settings.
+    </p>
+    <p> I remember watching a video about a 96KB video game (Kkrieger) made by Farbrausch, I was very interested in how it worked, it was really amazing to see how much a 96KB game could do! I thought that since they are an old group and their website isn't
+        very popular, it might close sometime soon. So I decided to archive everything I could find, with all of that being said, there were some missing pieces.</p>
+    <h2>Missing software</h2>
+    <p>There are missing pieces of software, If someone has a copy then please email them to me.</p>
+    <ul>
+        <li><a href="http://www.farbrausch.com/prod&which=78.py">fr-minus-08: funky bitch</a></li>
+        <li><a href="http://www.farbrausch.com/prod&which=70.py">fr-minus-02: ah</a> (not officialy released)</li>
+        <li><a href="http://www.farbrausch.com/prod&which=119.py">altona</a> Altona2 does exist and it is present in archives, but they're different so it makes sense to archive both of them.</li>
+        <li><a href="http://www.farbrausch.com/prod&which=177.py">Episode IV</a></li>
+        <li><a href="http://www.farbrausch.com/prod&which=178.py">Episode VII</a></li>
+        <li><a href="http://www.farbrausch.com/prod&which=183.py">fr-069: Booombox</a></li>
+        <li><a href="http://www.farbrausch.com/prod&which=188.py">fr-minus-017: coderpr0n</a></li>
+        <li><a href="http://www.farbrausch.com/prod&which=189.py">fr-minus-018: Draislyetherper</a></li>
+        <li><a href="http://www.farbrausch.com/prod&which=118.py">frp</a></li>
+        <li><a href="http://www.farbrausch.com/prod&which=87.py">fvs32</a></li>
+        <li><a href="http://www.farbrausch.com/prod&which=117.py">generator</a></li>
+        <li><a href="http://www.farbrausch.com/prod&which=116.py">genthree</a></li>
+        <li><a href="http://www.farbrausch.com/prod&which=99.py">RauschGenerator 2</a> The 2 implies that there was a RauschGenerator 1; I am not sure if it actually exists however.</li>
+        <li><a href="http://www.farbrausch.com/prod&which=7.py">spidr</a></li>
+        <li><a href="http://www.farbrausch.com/prod&which=13.py">fr-04: hinein in farbe und form</a></li>
+    </ul><br>
+    <h2>Compression techniques</h2>
+    <p>Here is a list of techniques I used to get the files as small as possible.</p>
+    <ul>
+        <li>Extracting every single compressed thing and them compressing it again</li>
+        <p>If you are compressing something with a lot of compressed archives then chances are that your archive won't get smaller, It's because the archives were already compressed and so the algorithm that you're using might not be able to do much, so
+            please extract everything that you can and then compress it. it will save some extra space!</p>
+        <li>Using maximum compression settings</li>
+        <p>I used 7zip because it supports a lot of different algorithms and settings, the exact switches I used were <br><code>-t7z -mx=9 -mfb=273 -ms -md=31 -myx=9 -mtm=- -mmt -mmtf -md=1536m -mmf=bt3 -mmc=10000 -mpb=0 -mlc=0</code>, so the Linux command
+            was <br><code>7z a -t7z -mx=9 -mfb=273 -ms -md=31 -myx=9 -mtm=- -mmt -mmtf -md=1536m -mmf=bt3 -mmc=10000 -mpb=0 -mlc=0 ARCHIVENAME.7z folder folder/*</code></p>
+    </ul>
+</body>
+
+</html>

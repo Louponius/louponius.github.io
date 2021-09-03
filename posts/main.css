@@ -1,0 +1,81 @@
+/*
+Dark mode support
+*/
+
+:root {
+    /* color variables */
+    --border: #4a4a4a;
+    --body: #262626;
+    --text: #d8d8d8;
+    /* font families */
+    --fancy: serif;
+    --casual: sans-serif;
+    --coding: monospace;
+    --compatibility: sans-serif, 'Arial', 'Helvetica', 'New Courier', serif, monospace;
+}
+
+.cen {
+    text-align: center;
+}
+
+* {
+    scrollbar-color: #202324 #454a4d;
+}
+
+body {
+    background-color: var(--body);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+li {
+    color: var(--text);
+    font-family: var(--casual);
+}
+
+hr {
+    color: var(--border);
+}
+
+
+/* Text css classes for custom support. */
+
+.casual {
+    font-family: var(--casual);
+}
+
+.fancy {
+    font-family: var(--fancy);
+}
+
+.coding {
+    font-family: var(--coding);
+}
+
+.compatibility {
+    font-family: var(--compatibility);
+}
+
+
+/* Link customization */
+
+a:link,
+a:visited {
+    color: #2679ff;
+}
+
+a:hover,
+a:active {
+    color: #fc471e;
+    font-style: italic;
+}
+
+.center {
+    text-align: center;
+}
